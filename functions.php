@@ -13,3 +13,18 @@
         'name'        => 'Top Sidebar',
         'description' => 'Add some to Top Sidebar.'
     ]);
+
+    register_post_type('member', [
+        'public'   => true,
+        'labels'   => [
+            'name'               => 'Teams',
+            'all_items'          => 'All Member',
+            'add_new'            => 'Add Member',
+            'add_new_item'       => 'Add New Member',
+            'featured_image'     => 'Member Image',
+            'set_featured_image' => 'Set Member Image'
+        ],
+        'supports'  => ['title', 'editor', 'thumbnail'],
+        'menu_icon' => 'dashicons-groups',
+        'menu_position' => 2
+    ]);
