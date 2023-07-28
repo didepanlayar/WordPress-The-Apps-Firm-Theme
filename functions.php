@@ -28,3 +28,8 @@
         'menu_icon' => 'dashicons-groups',
         'menu_position' => 2
     ]);
+
+    register_nav_menus([
+        'top_menu'    => 'Top Menu',
+        'footer_menu' => 'Footer Menu'
+    ]);
