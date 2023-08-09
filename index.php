@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php wp_head(); ?>
 </head>
-<body>
-    <h1><?php bloginfo('title'); ?></h1>
-    <p><?php bloginfo('description'); ?></p>
+<body <?php body_class(); ?>>
+    <?php wp_nav_menu([
+        'theme_loaction' => 'top_menu',
+        'container'      => 'nav'
+    ]); ?>
     <?php wp_footer(); ?>
 </body>
 </html>
