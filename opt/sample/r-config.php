@@ -80,16 +80,16 @@ $args = array(
 	'display_version'           => $theme->get( 'Version' ),
 
 	// Specify if the admin menu should appear or not. Options: menu or submenu (Under appearance only).
-	'menu_type'                 => 'menu',
+	'menu_type'                 => 'submenu',
 
 	// Show the sections below the admin menu item or not.
 	'allow_sub_menu'            => true,
 
 	// The text to appear in the admin menu.
-	'menu_title'                => esc_html__( 'Sample Options', 'your-textdomain-here' ),
+	'menu_title'                => esc_html__( 'Theme Setting', 'your-textdomain-here' ),
 
 	// The text to appear on the page title.
-	'page_title'                => esc_html__( 'Sample Options', 'your-textdomain-here' ),
+	'page_title'                => esc_html__( 'Theme Setting', 'your-textdomain-here' ),
 
 	// Disable to create your own Google fonts loader.
 	'disable_google_fonts_link' => false,
@@ -107,10 +107,10 @@ $args = array(
 	'global_variable'           => $opt_name,
 
 	// Show the time the page took to load, etc. (forced on while on localhost or when WP_DEBUG is enabled).
-	'dev_mode'                  => true,
+	'dev_mode'                  => false,
 
 	// Enable basic customizer support.
-	'customizer'                => true,
+	'customizer'                => false,
 
 	// Allow the panel to open expanded.
 	'open_expanded'             => false,
@@ -140,7 +140,7 @@ $args = array(
 	'page_slug'                 => $opt_name,
 
 	// On load save the defaults to DB before user clicks save.
-	'save_defaults'             => true,
+	'save_defaults'             => false,
 
 	// Display the default value next to each field when not set to the default value.
 	'default_show'              => false,
@@ -149,17 +149,17 @@ $args = array(
 	'default_mark'              => '*',
 
 	// Shows the Import/Export panel when not used as a field.
-	'show_import_export'        => true,
+	'show_import_export'        => false,
 
 	// The time transients will expire when the 'database' arg is set.
 	'transient_time'            => 60 * MINUTE_IN_SECONDS,
 
 	// Global shut-off for dynamic CSS output by the framework. Will also disable google fonts output.
-	'output'                    => true,
+	'output'                    => false,
 
 	// Allows dynamic CSS to be generated for customizer and google fonts,
 	// but stops the dynamic CSS from going to the page head.
-	'output_tag'                => true,
+	'output_tag'                => false,
 
 	// Disable the footer credit of Redux. Please leave if you can help it.
 	'footer_credit'             => '',
