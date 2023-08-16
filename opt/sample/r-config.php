@@ -300,7 +300,18 @@ Redux::set_args( $opt_name, $args );
 	$opt_name,
 	[
 		'icon'            => 'el el-arrow-up',
-		'title' 		  => 'Header'
+		'title' 		  => 'Header',
+		'id' 		 	  => 'header'
+	]
+ );
+
+ Redux::set_section(
+	$opt_name,
+	[
+		'title' 		  => 'Fonts',
+		'id' 		 	  => 'header-fonts',
+		'subsection'	  => true
+
 	]
  );
 
