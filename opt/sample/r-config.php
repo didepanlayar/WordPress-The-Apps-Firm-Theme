@@ -288,24 +288,24 @@ Redux::set_args( $opt_name, $args );
  * ---> START SECTIONS
  */
 
- Redux::set_section(
+Redux::set_section(
 	$opt_name,
 	[
 		'icon'            => 'el el-website',
 		'title' 		  => 'Layout'
 	]
- );
+);
 
- Redux::set_section(
+Redux::set_section(
 	$opt_name,
 	[
 		'icon'            => 'el el-arrow-up',
 		'title' 		  => 'Header',
 		'id' 		 	  => 'header'
 	]
- );
+);
 
- Redux::set_section(
+Redux::set_section(
 	$opt_name,
 	[
 		'title' 		  => 'Fonts',
@@ -313,31 +313,48 @@ Redux::set_args( $opt_name, $args );
 		'subsection'	  => true
 
 	]
- );
+);
 
- Redux::set_section(
+Redux::set_section(
 	$opt_name,
 	[
 		'icon'            => 'el el-arrow-down',
 		'title' 		  => 'Footer'
 	]
- );
+);
 
- Redux::set_section(
+Redux::set_section(
 	$opt_name,
 	[
 		'icon'            => 'el el-picture',
 		'title' 		  => 'Logo'
 	]
- );
+);
 
- Redux::set_section(
+Redux::set_section(
 	$opt_name,
 	[
 		'icon'            => 'el el-network',
 		'title' 		  => 'Social Media'
 	]
- );
+);
+
+Redux::set_section(
+	$opt_name,
+	[
+		'icon'            => 'el el-css',
+		'title' 		  => 'Custom CSS',
+		'id'			  => 'custom-css',
+		'fields'		  => [
+			[
+				'id'              => 'opt-custom-css',
+				'type' 			  => 'ace_editor',
+				'title'			  => 'Add Custom CSS',
+				'mode'			  => 'css'
+			]
+		]
+	]
+);
 
 Redux::set_section(
 	$opt_name,
