@@ -288,6 +288,46 @@ Redux::set_args( $opt_name, $args );
  * ---> START SECTIONS
  */
 
+ Redux::set_section(
+	$opt_name,
+	[
+		'icon'            => 'el el-website',
+		'title' 		  => 'Layout'
+	]
+ );
+
+ Redux::set_section(
+	$opt_name,
+	[
+		'icon'            => 'el el-arrow-up',
+		'title' 		  => 'Header'
+	]
+ );
+
+ Redux::set_section(
+	$opt_name,
+	[
+		'icon'            => 'el el-arrow-down',
+		'title' 		  => 'Footer'
+	]
+ );
+
+ Redux::set_section(
+	$opt_name,
+	[
+		'icon'            => 'el el-picture',
+		'title' 		  => 'Logo'
+	]
+ );
+
+ Redux::set_section(
+	$opt_name,
+	[
+		'icon'            => 'el el-network',
+		'title' 		  => 'Social Media'
+	]
+ );
+
 Redux::set_section(
 	$opt_name,
 	array(
