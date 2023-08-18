@@ -308,9 +308,36 @@ Redux::set_section(
 Redux::set_section(
 	$opt_name,
 	[
-		'title' 		  => 'Fonts',
-		'id' 		 	  => 'header-fonts',
-		'subsection'	  => true
+		'title' 		  => 'Top Bar',
+		'id' 		 	  => 'header-top-bar',
+		'subsection'	  => true,
+		'fields'		  => [
+			[
+				'id'              => 'opt-top-bar-visibility',
+				'type' 			  => 'switch',
+				'title'			  => 'Visibility'
+			],
+			[
+				'id'              => 'opt-top-bar-email',
+				'type' 			  => 'text',
+				'title'			  => 'Email'
+			],
+			[
+				'id'              => 'opt-top-bar-facebook',
+				'type' 			  => 'text',
+				'title'			  => 'Facebook'
+			],
+			[
+				'id'              => 'opt-top-bar-instagram',
+				'type' 			  => 'text',
+				'title'			  => 'Instagram'
+			],
+			[
+				'id'              => 'opt-top-bar-twitter',
+				'type' 			  => 'text',
+				'title'			  => 'Twitter'
+			]
+		]
 
 	]
 );
@@ -327,7 +354,14 @@ Redux::set_section(
 	$opt_name,
 	[
 		'icon'            => 'el el-picture',
-		'title' 		  => 'Logo'
+		'title' 		  => 'Logo',
+		'fields'		  => [
+			[
+				'id'              => 'opt-logo',
+				'type' 			  => 'media',
+				'title'			  => 'Upload Logo'
+			]
+		]
 	]
 );
 
@@ -351,6 +385,22 @@ Redux::set_section(
 				'type' 			  => 'ace_editor',
 				'title'			  => 'Add Custom CSS',
 				'mode'			  => 'css'
+			]
+		]
+	]
+);
+
+Redux::set_section(
+	$opt_name,
+	[
+		'icon'            => 'el el-retweet',
+		'title' 		  => 'Import/Export',
+		'id'			  => 'import-export',
+		'fields'		  => [
+			[
+				'id'              => 'opt-import-export',
+				'type' 			  => 'import_export',
+				'title'			  => 'Import or Export'
 			]
 		]
 	]
